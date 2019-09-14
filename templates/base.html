@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Головна сторінка</title>
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
 </head>
 <body>
-
+<div class="navbar-nav">
+    {% block content %}
+    {% endblock content %}
+</div>
 </body>
 </html>
