@@ -26,6 +26,5 @@ class CustomUser(AbstractUser):
                               default=NOT_SENT)
 
     def __str__(self):
-        return self.get_full_name()
-
+        return self.username + '  -  ' + self.email
 
