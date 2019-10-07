@@ -184,3 +184,7 @@ fabric.properties
 
 # bootstrap files
 bootstrap-4.3.1-dist/
+bootstrap.css/
+bootstrap-grid.css/
+bootstrap-reboot.css/
+js/
