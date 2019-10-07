@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,123 @@
 
     <title>
         {% block title %}
+            Головна
         {% endblock title %}
     </title>
 
-    {% load static %}
-    <link rel="stylesheet" href="/static/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href=" /static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/menu-style.css">
+    <link rel="stylesheet" href="/static/css/main-style.css">
 </head>
+
 <body>
-<div class="navbar-nav">
-    {% block content %}
-    {% endblock content %}
 
-</div>
+<header class="section-header">
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1">
 
-<button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div class="col-sm-10 row">
+                    <div class="col-sm-10 top-header-content ">
+                        <div class="top-header">
+                            <p class="top-header-content-1">
+                                <a href="#">8901 Marmora Road, Glasgow, D04 89GR </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 top-header-content">
+                        <div class="top-header">
+                            <p class="top-header-content-1">
+                                <a href="#">380689033378 </a>
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="col-sm-1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header menu-fixed">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <p class="logo">
+                                    <a href="/">P-Trans</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-10 menu">
+                                <div class="bottom-header">
+                                    <ul class="list-menu">
+                                        <li class="item-menu top-header-content">
+                                            <a href="#">Головна</a>
+                                        </li>
+                                        <li class="item-menu top-header-content">
+                                            <a href="#">Про нас</a>
+                                        </li>
+                                        <li class="item-menu top-header-content">
+                                            <a href="#">Сервіс</a>
+                                        </li>
+                                        <li class="item-menu top-header-content">
+                                            <a href="#">Послуги</a>
+                                        </li>
+                                        <li class="item-menu top-header-content">
+                                            <a href="#">Опис</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <span class="line"></span>
+
+</header>
+
+<main>
+    <div class="main-section-1 bg-image">
+        <div class="container-fluid">
+            <div class="row bottom-medium">
+                <div class="col-sm-6 service-text">
+                    Сервіс для перевезення пасажирів в будь-яку точку Європи та СНД
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 bottom-medium ">
+                        <p class="button-big-red">
+                            <a href="#">Дивитись більше</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-8 bottom-medium">
+                        <p class="button-outline">
+                            <a href="#">Зробити замовлення</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+</footer>
 {% load static %}
-<script src="/static/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
