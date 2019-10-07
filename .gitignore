@@ -183,8 +183,10 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # bootstrap files
-bootstrap-4.3.1-dist/
-bootstrap.css/
-bootstrap-grid.css/
-bootstrap-reboot.css/
-js/
+css/
+bootstrap-4.3.1-dist
+bootstrap.css
+bootstrap-grid.css
+bootstrap-reboot.css
+bootstrap.bundle.js/
+bootstrap.js/
